@@ -1,7 +1,8 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import { Paper, TextField,Button } from "@material-ui/core";
-import Navbar from "./navBar"
+// import { Paper, TextField,Button } from "@material-ui/core";
+// import Navbar from "./navBar";
+import BarChart from "./barChart"
 const useStyles = makeStyles((theme) => ({
 
   Paper: {
@@ -21,7 +22,7 @@ function App() {
   const classes = useStyles();
   return (
     <div className={classes.root}>
-      <Navbar />
+      {/* <Navbar />
       <Paper elevation={3} className={classes.Paper}>
         <h1>Login</h1>
         <form className={classes.root} noValidate autoComplete="off">
@@ -33,7 +34,10 @@ function App() {
             Login
           </Button>
         </form>
-      </Paper>
+      </Paper> */}
+
+      <BarChart />
+
     </div>
   );
 }
